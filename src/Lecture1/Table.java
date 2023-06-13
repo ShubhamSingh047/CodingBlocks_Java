@@ -8,7 +8,11 @@ public class Table {
 		 int n=s.nextInt();
 		 int i=1;
 		 while(i<=10) {
+			 if((n*i)%4==0) {
+				 continue;
+			 }else {
 			 System.out.println(n*i);
+			 }
 			 i++;
 		 }
 	}
