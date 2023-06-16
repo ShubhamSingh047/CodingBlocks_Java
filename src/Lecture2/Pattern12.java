@@ -25,10 +25,10 @@ public class Pattern12 {
 			int m=1;
 			while(m<=i-1) {
 				if(i%2==0) {
-				if(m%2!=0)
-					System.out.print("*");
-				else 
-					System.out.print("!");
+					if(m%2!=0)
+						System.out.print("*");
+					else 
+						System.out.print("!");
 				}else {
 					if(m%2!=0)
 						System.out.print("!");
