@@ -25,7 +25,6 @@ public class Pattern19 {
 				k = 2;
 			}
 			while (k <= star) {
-
 				System.out.print("* ");
 				k++;
 			}
