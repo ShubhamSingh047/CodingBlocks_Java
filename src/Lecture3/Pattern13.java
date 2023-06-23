@@ -14,6 +14,8 @@ public class Pattern13 {
 				System.out.print("* ");
 				i++;
 			}
+			//mirroring
+		
 			row++;
 			if(row<=n)
 				star++;
