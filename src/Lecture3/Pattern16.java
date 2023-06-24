@@ -11,7 +11,7 @@ public class Pattern16 {
 		int star=n;
 		while(row<=2*n-1) {
 			int i=1;
-			while(i<space) {
+			while(i<=space) {
 				System.out.print("  ");
 				i++;
 			}
