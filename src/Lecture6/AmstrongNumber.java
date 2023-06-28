@@ -8,12 +8,13 @@ public class AmstrongNumber {
         call(n);
     }
     public static void call(int n){
+    	//power
         int pow=0;
         int temp=n;
         int re=n;
         while(n!=0){
             pow++;
-            n/=10;
+            n/=10; //typecasting
         }
         int res=0;
         while(temp!=0){
