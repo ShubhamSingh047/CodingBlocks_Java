@@ -5,13 +5,13 @@ public class Boston_Number {
 	public static void main(String[] args) {
 		        Scanner s=new Scanner(System.in);
 		        int n=s.nextInt();
-		        int i=0;
+		        int i=2;
 		        int sum=0;
 		        int temp=n;
 		        int res=0;
 		        while(i<=n){
 		            if(n%i==0){
-		                sum+=i;
+		                sum+=i%10;
 		                n/=i;
 		            }
 		            else{
