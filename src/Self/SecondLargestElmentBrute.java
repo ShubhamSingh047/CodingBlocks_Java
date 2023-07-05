@@ -1,4 +1,4 @@
-package Slef;
+package Self;
 
 public class SecondLargestElmentBrute {
 	public static void main(String[] args) {

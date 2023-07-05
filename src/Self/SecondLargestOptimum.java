@@ -1,4 +1,4 @@
-package Slef;
+package Self;
 
 public class SecondLargestOptimum {
 	public static void main(String[] args) {
