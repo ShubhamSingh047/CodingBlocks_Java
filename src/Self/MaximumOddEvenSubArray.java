@@ -5,7 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class MaximumOddEvenSubArray {
 	public static void main(String[] args) {
 		int[] arr= {1, 2, 3, 4, 5, 7, 9};
-		int res=0;
+		int res=1;
 		int n=arr.length;
 		for(int i=0; i<n; i++) {
 			int count=1;
