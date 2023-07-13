@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	int maxEnd=arr[0];
 	for(int i=1; i<arr.length; i++) {
 		maxEnd=Math.max(maxEnd+arr[i], arr[i]);
-		res=Math.max(maxEnd,arr[i]);
+		res=Math.max(maxEnd,res);
 	}
 	System.out.println(res);
 }
