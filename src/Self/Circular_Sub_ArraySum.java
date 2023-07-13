@@ -7,7 +7,7 @@ public class Circular_Sub_ArraySum {
 		
 		int simple_SubArray=Normal_Sum_SubArray(arr, n);
 		
-//		imp trick
+//		imp condition
 		if(simple_SubArray<0) {
 			System.out.println(simple_SubArray);
 			return;
