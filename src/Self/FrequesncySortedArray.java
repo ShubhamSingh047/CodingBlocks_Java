@@ -2,7 +2,7 @@ package Self;
 
 public class FrequesncySortedArray {
 	public static void main(String[] args) {
-		int[] arr= {1, 1, 1, 2, 3, 3, 5, 5, 8, 8, 8, 9, 9, 10,10,10,10};
+		int[] arr= {1, 1, 1, 2, 3, 3, 5, 5, 8, 8, 8, 9, 9, 10,10,10,11};
 		int n=arr.length;
 		int count=1;
 		for(int i=1; i<n; i++) {
