@@ -2,6 +2,7 @@ package Self;
 
 public class FlipArrayZeroOne {
 	public static void main(String[] args) {
+		//not complete
 		int[] arr= {0, 0, 0, 1, 0, 0,0, 1,1,0,0,0,1};
 		int n=arr.length;
 		int flipOne=0, flipZero=0;
@@ -26,9 +27,7 @@ public class FlipArrayZeroOne {
 			if(arr[i]== num && arr[i]!=arr[i-1]) {
 				System.out.print(i+" - ");
 			}
-			if(arr[i]==num && arr[i+1]!=arr[i]) {
-				System.out.println(i);
-			}
+			
 		}
 	}
 }
