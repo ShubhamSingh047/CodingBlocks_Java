@@ -19,7 +19,7 @@ public class Amstrong_Number_Series {
 	      Number = i;
 		  while (Number!= 0) {
 		        int rem = Number% 10;
-		        result += Math.pow(rem, digits);
+		        result += Math.pow(rem, 10);
 		        Number /= 10;
 		  }
 

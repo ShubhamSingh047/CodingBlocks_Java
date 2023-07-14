@@ -9,6 +9,7 @@ public class LengthSubstring {
 		PrintSubstring(s1);
 		
 	}
+	//printing in sequence;
 	public static void PrintSubstring(String S) {
 		for(int i=1; i<=S.length(); i++) {
 			for(int j=i; j<=S.length(); j++) {
