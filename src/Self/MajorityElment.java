@@ -2,6 +2,7 @@ package Self;
 
 public class MajorityElment {
 	public static void main(String[] args) {
+		//moores voting algo
 		int[] arr= {0,1,1,1,1};
 		int n=arr.length;
 		int count=1; int res=0;
