@@ -23,7 +23,7 @@ public class FlipArrayZeroOne {
 		}
 		
 		int res=(flipOne>flipZero)?flipZero:flipOne;
-		int num=(flipOne>flipZero)?0:1;
+		int num=(flipOne<flipZero)?1:0;
 		System.out.println(res+"<- ->"+num);
 		
 		for(int i=1; i<n; i++) {
