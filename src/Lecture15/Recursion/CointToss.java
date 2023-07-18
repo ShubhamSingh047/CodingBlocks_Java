@@ -10,7 +10,9 @@ public class CointToss {
 			System.out.println(ans);
 			return ;
 		}
-		CoinPrint(s+1, ans+"H", n);
+		if((s>0 && ans.charAt(s-1)!='H')||(s==0)) {
+			CoinPrint(s+1, ans+"H", n);
+		}
 		CoinPrint(s+1, ans+"T", n);	
 	}
 }
