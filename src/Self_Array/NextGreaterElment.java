@@ -25,16 +25,23 @@ public static void main(String args[]) {
 		for(int i=n-1; i>0; i--) {
 			if(arr[i-1]<arr[i]) {
 				index1=i-1;
-				index2=i;
 				break;
 			}
 		}
-        if(index1==-1){
-		    ReverseArr(arr,0,n-1);
-            return;
-        }
-        swap(arr,index1,index2);
-		ReverseArr(arr,index2,n-1);
+		if (index1!=-1){
+		 for(int i=n-1; i>=0;i--){
+             if(arr[index1]<arr[i]){
+                index2=i;
+                break;
+             }
+         }	
+		 swap(arr,index1,index2);
+		}else {
+        	 ReverseArr(arr, 0, n-1);
+        	 return;
+         }
+        System.out.println(index2+" <-index2 ");
+		ReverseArr(arr,index1+1,n-1);
 		
 	}
 	public static void ReverseArr(int[] arr, int i, int j) {
