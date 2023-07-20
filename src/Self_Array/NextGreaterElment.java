@@ -30,7 +30,7 @@ public static void main(String args[]) {
 			}
 		}
         if(index1==-1){
-		    ReverseArr(arr,index2,n-1);
+		    ReverseArr(arr,0,n-1);
             return;
         }
         swap(arr,index1,index2);
