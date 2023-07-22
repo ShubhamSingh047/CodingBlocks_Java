@@ -2,10 +2,11 @@ package Self_Array;
 
 public class Circular_Sub_ArraySum {
 	public static void main(String[] args) {
-		int[] arr= {5, -3,2,1};
+		int[] arr= {8 ,-8 ,9 ,-9 ,10 ,-11 ,12};
 		int n=arr.length;
 		
 		int simple_SubArray=Normal_Sum_SubArray(arr, n);
+		System.out.println(simple_SubArray);
 		
 //		imp condition
 		if(simple_SubArray<0) {
