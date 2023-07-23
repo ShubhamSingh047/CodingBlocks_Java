@@ -6,7 +6,7 @@ public class SubSequence {
 	public static void main(String[] args) {
 		int arr[]= {3,2,1};
 		ArrayList<Integer> li=new ArrayList<Integer>();
-		PrintSubsequence(0,arr,li,0);
+		PrintSubsequence(0,arr,li);
 	}
 
 	private static void PrintSubsequence(int i, int[] arr,ArrayList<Integer>temp) {
