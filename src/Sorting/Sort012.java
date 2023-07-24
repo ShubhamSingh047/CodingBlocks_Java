@@ -18,7 +18,8 @@ public class Sort012 {
 				Swap(arr,low++,mid++);
 			else if(arr[mid]==2)
 				Swap(arr, mid++,high--);
-			
+			else 
+				mid++;
 		}
 	}
 
