@@ -7,10 +7,11 @@ public class BordQueen {
 		int n=4;
 		boolean[] board=new boolean[n];
 		int tq=2;
-		Permution(board, tq, "", 0);
+//		Permution(board, tq, "", 0);
+		Combination(board, tq, "", 0,0);
 	}
 
-	private static void Permution(boolean[] board, int tq, String ans, int qpsf) {
+	public static void Permution(boolean[] board, int tq, String ans, int qpsf) {
 		
 		// TODO Auto-generated method stub
 		if(qpsf==tq) {
@@ -24,6 +25,21 @@ public class BordQueen {
 				Permution(board, tq,ans+"b"+i+"q",qpsf+1);
 				board[i]=false;
 			}
+		}	
+	}
+	public static void Combination(boolean[] board, int tq, String ans, int qpsf,int idx ) {
+		if(qpsf==tq) {
+			System.out.println(ans);
+			return;
+		}
+		
+		for(int i=idx; i<board.length; i++) {
+			if(!board[i]) {
+				board[i]=true;
+				Combination(board, tq,ans+"b"+i+"q"+qpsf,qpsf+1,i+1);
+				board[i]=false;
+			}
 		}
 	}
+	
 }
