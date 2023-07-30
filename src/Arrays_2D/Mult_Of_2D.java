@@ -14,12 +14,7 @@ public class Mult_Of_2D {
 		int row = s.nextInt();
 		int col = s.nextInt();
 		int arr1[][] = new int[row][col];
-		System.out.println("Enter "+row+"<-row x col->"+col);
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				arr1[i][j] = s.nextInt();
-			}
-		}
+		Input2D(arr1,row,col);
 		System.out.println("Enter row2 and col2 respectively for arr2");
 		int row2 = s.nextInt();
 		int col2 = s.nextInt();
@@ -27,14 +22,19 @@ public class Mult_Of_2D {
 			System.out.println("Not possible");
 			return;
 		}
-		System.out.println("Enter "+row2+" <- row2 x col2-> "+col2);
 		int arr2[][] = new int[row2][col2];
-		for (int i = 0; i < row2; i++) {
-			for (int j = 0; j < col2; j++) {
-				arr2[i][j] = s.nextInt();
+		Input2D(arr2,row2,col2);
+		DoingOperation(arr1, arr2);
+	}
+	public static void Input2D(int[][] arr, int row, int col) {
+		Scanner s= new Scanner(System.in);
+		int arr1[][] = new int[row][col];
+		System.out.println("Enter "+row+"<-row x col->"+col);
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				arr1[i][j] = s.nextInt();
 			}
 		}
-		DoingOperation(arr1, arr2);
 	}
 
 	public static void DoingOperation(int[][] arr1, int[][] arr2) {
