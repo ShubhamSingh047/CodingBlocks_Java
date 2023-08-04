@@ -1,4 +1,4 @@
-package Stack;
+package StackAndQueue;
 
 import java.util.Stack;
 
@@ -10,9 +10,6 @@ public class ReverAStack {
 		st.push(30);
 		st.push(-10);
 		st.push(20);
-//		int x=-9;
-//		System.out.println(st);
-//		Insert(st,x);
 		System.out.println(st);
 		Reverse(st);
 		System.out.println(st);
