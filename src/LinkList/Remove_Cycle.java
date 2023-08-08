@@ -97,7 +97,47 @@ public class Remove_Cycle {
 			System.out.println(".");
 		}
 		
-		public static void main(String[] args) {
+		public void Cyclermoval2(){
+			Node meet= hasCycle();
+			if(meet==null) {
+				return;
+			}
+			int count=1;
+			
+			Node temp=meet;
+			while(temp.next!=meet) {
+				count++;
+				temp=temp.next;
+			}
+			
+			Node fast=head;
+			for(int i=0; i<count; i++) {
+				fast=fast.next;
+			}
+			
+			Node slow=head;
+			while(slow.next != fast.next) {
+				slow=slow.next;
+				fast=fast.next;
+			}
+			fast.next=null;
+		}
+		
+		public void Floyedcycle() {
+			Node meet=hasCycle();
+			if(meet==null) {
+				return;
+			}
+			Node fast=meet;
+			Node slow=head;
+			while(slow.next != fast.next) {
+				slow=slow.next;
+				fast=fast.next;
+			}
+			fast.next=null;
+		}
+		
+		public static void main(String[] args) throws Exception{
 			Remove_Cycle nn= new Remove_Cycle();
 			nn.addlast(1);
 			nn.addlast(2);
@@ -107,7 +147,7 @@ public class Remove_Cycle {
 			nn.addlast(6);
 			nn.addlast(7);
 			nn.addlast(8);
-//			nn.CyclereMoval1();
+			nn.CyclereMoval1();
 			nn.Display();
 		}
 }
