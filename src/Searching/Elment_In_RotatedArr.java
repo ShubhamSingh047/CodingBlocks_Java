@@ -12,12 +12,20 @@ public class Elment_In_RotatedArr {
 				System.out.println(mid);
 				return;
 			}
+			if(arr[mid]<=arr[high]) {
 				if(arr[mid]<=x && x<arr[high]) {
 					low=mid+1;
 				}else {
 					high=mid-1;
 				}
+			}else {
+				if(arr[low]<=x && x<=arr[mid]) {
+					high=mid-1;
+				}else {
+					low=mid+1;
+				}
 			}
+		}
 		System.out.println(-1);
 	}
 }
