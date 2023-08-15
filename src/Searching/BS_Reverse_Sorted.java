@@ -19,6 +19,4 @@ public class BS_Reverse_Sorted {
 		}
 		System.out.println(-1);
 	}
-	
-
 }

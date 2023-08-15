@@ -12,6 +12,8 @@ public class KthPostiveNumber {
 			arr[i]=s.nextInt();
 		}
 		findKthPositive(arr,k);
+		int res=BS_approch_k(arr,k);
+		System.out.println(res);
 	}
 	public static int findKthPositive(int[] arr, int k) {
         for(int i=0; i<arr.length; i++){
@@ -23,5 +25,17 @@ public class KthPostiveNumber {
         }
         return k;
     }
-	public static int BS_approch_k(a) 
+	public static int BS_approch_k(int [] arr,int k) {
+		int low=0; int high=arr.length-1;
+		while(low<=high) {
+			int mid=(low+high)/2;
+			int missing=arr[mid]-(mid+1);
+			if(missing<k) {
+				low=mid+1;
+			}else {
+				high=mid-1;
+			}
+		}
+		return low+k;
+	}
 }
