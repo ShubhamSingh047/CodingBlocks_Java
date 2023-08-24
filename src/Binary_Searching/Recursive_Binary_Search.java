@@ -2,7 +2,7 @@ package Binary_Searching;
 
 public class Recursive_Binary_Search {
 	public static void main(String[] args) {
-		int[] arr= {1,2,3,4,5};
+		int[] arr= {1,2,3,4,5,6,7};
 		System.out.println(Recursive_Sol(arr,5,0,4));
 	}
 
