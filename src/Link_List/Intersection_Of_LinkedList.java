@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class Intersection_Of_LinkedList {
 	//https://leetcode.com/problems/intersection-of-two-linked-lists/submissions/

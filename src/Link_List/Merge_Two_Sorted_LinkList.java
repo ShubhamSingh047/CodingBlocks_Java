@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class Merge_Two_Sorted_LinkList {
 	//https://leetcode.com/problems/merge-two-sorted-lists/

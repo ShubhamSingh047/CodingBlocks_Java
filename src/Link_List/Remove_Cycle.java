@@ -1,6 +1,6 @@
-package LinkList;
+package Link_List;
 
-import LinkList.Custom_List.Node;
+import Link_List.Custom_List.Node;
 
 public class Remove_Cycle {
 	

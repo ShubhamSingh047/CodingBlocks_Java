@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class ReverseALinkList {
 	public ListNode reverseList(ListNode head) {

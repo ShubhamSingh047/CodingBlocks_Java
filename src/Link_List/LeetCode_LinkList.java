@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class LeetCode_LinkList {
 	//https://leetcode.com/problems/middle-of-the-linked-list/

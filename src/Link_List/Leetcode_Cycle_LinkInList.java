@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class Leetcode_Cycle_LinkInList {
 	//Question https://leetcode.com/problems/linked-list-cycle/ floyed cycle algo

@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class Using_Custome_Next {
 	public static void main(String[] args) throws Exception {

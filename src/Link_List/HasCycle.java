@@ -1,4 +1,4 @@
-package LinkList;
+package Link_List;
 
 public class HasCycle {
 	Node fast=head;
