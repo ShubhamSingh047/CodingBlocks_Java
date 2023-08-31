@@ -7,6 +7,7 @@ public class Using_Custome_Next {
 		ll.addFirst(20);
 		ll.addFirst(30);
 		ll.addFirst(40);
+		ll.AddAtIndex(2, 500);
 		ll.Display();
 		int res=ll.getAtIndex(1);
 		System.out.println(res);
