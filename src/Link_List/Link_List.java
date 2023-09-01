@@ -11,7 +11,23 @@ public class Link_List {
 		Node next;
 	}
 	
+	public Node getHead() {
+		return head;
+	}
+	
+	public void getSize() {
+		System.out.println(size);
+	}
+	
 	public void Dispaly() {
+		Node temp=head;
+		while(temp!=null) {
+			System.out.print(temp.data+" ");
+			temp=temp.next;
+		}
+		System.out.println("!");
+	}
+	public void Dispaly(Node head) {
 		Node temp=head;
 		while(temp!=null) {
 			System.out.print(temp.data+" ");

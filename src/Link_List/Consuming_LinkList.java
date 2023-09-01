@@ -1,7 +1,5 @@
 package Link_List;
 
-import java.util.prefs.NodeChangeEvent;
-
 public class Consuming_LinkList {
 	public static void main(String[] args) throws Exception {
 		Link_List ll= new Link_List();
