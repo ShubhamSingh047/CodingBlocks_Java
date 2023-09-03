@@ -1,6 +1,7 @@
 package Link_List;
 
 public class SpaertaeOddEven {
+	//https://leetcode.com/problems/odd-even-linked-list/submissions/
     public ListNode oddEvenList(ListNode head) {
         ListNode temp=head;
         ListNode odd=new ListNode();
