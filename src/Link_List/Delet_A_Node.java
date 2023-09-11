@@ -9,9 +9,26 @@ public class Delet_A_Node {
 		ll.addFirst(40);
 		ll.Dispaly();
 	}
-	public static void delteNode(Node node) {
-		node.data=node.next.data;
-		node.next=node.next.next;
+	public static Node<Integer> deleteNode( Node<Integer> head, int pos) {
+		// Write your code here.
+		if(head==null)return null;
+		if(pos==0){
+			head=head.next;
+			return head;
+		}
+		Node temp=head;
+		while(temp!=null){
+			if(pos==1){
+				if(temp.next!=null){
+					temp.next=temp.next.next;
+				}else{
+					temp.next=null;
+				}
+			}
+			pos--;
+			temp=temp.next;
+		}
+		return head;
 	}
 
 }
